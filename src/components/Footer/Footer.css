@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.footer{
+    display: block;
+    background-color: rgba(177, 177, 177, 0.514);
+    text-align: center;
+}
+
+.footer-container{
+    width: 100%;
+    display: table;
+    font-family: 'Poppins', sans-serif;
+}
+.footer_social-container, .footer_quote-container {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    padding:20px;
+}
+.logo {
+    width: 40px;
+}
+@media only screen and (min-width: 745px) {
+    /* Desktop Version */
+    .footer-container{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+  
+@media only screen and (min-width: 1000px) {
+    /* Big screen */
+    .footer-container{
+        width: 40%;
+        margin-left: 30%;
+    }
+}

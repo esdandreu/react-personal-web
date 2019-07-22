@@ -1,0 +1,24 @@
+.TimelineContainer {
+    width: 92%;
+    margin-left: 5%;
+    margin-right: 3%;
+    background-color: red;
+    display: inline-block;
+}
+
+.TimelinePeriodContainer, .TimelineEventContainer {
+    /* display: table-cell; */
+    width: 49%;
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+}
+
+.TimelinePeriodContainer {
+    left: 0%;
+    border-right: 5px solid black;
+}
+
+.TimelineEventContainer {
+    left: 1%;
+}
