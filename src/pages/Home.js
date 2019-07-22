@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import homeText from './Home/homeText';
+import homeText from './Home/homeData';
 import './Home/Home.css';
 
 function Home() {

@@ -1,24 +1,42 @@
-.TimelineContainer {
-    width: 92%;
-    margin-left: 5%;
-    margin-right: 3%;
-    background-color: red;
-    display: inline-block;
+.timeline-container {
+    margin: 5%;
+    width: 90%;
 }
 
-.TimelinePeriodContainer, .TimelineEventContainer {
-    /* display: table-cell; */
-    width: 49%;
-    background-color: blue;
-    display: inline-block;
-    position: relative;
+.grid-container {
+    display: grid;
+    align-content: stretch;
+    grid-template-columns: 25fr 20fr 5fr 45fr;
+    grid-gap: 0px 5px;
 }
 
-.TimelinePeriodContainer {
-    left: 0%;
-    border-right: 5px solid black;
+.timeline_education-highschool, .timeline_education-valencia, .timeline_education-exchange {
+    margin: 1%;
+    background-color: rgba(102, 102, 102, 0.26);
+}
+.timeline_education-highschool {
+    grid-column: 1 / 2;
+    grid-row: span 4;
 }
 
-.TimelineEventContainer {
-    left: 1%;
+.timeline_education-valencia {
+    grid-column: 1 / 2;
+    grid-row: span 8;
+}
+
+.timeline_education-exchange {
+    grid-column: 2 / 3;
+    align-self: stretch;
+}
+
+.timeline-year{
+    grid-column: 3 / 4 ;
+    grid-row: span 2;
+    border-left: 2px solid black;
+    text-align: center;
+}
+
+.timeline_qualifications-container{
+    grid-column: 4 / 5 ;
+    grid-row: span 2;
 }
