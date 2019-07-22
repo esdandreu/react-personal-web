@@ -1,34 +1,28 @@
 import React, {Component} from 'react';
+import QUOTES from './Quotes'
 
 class Quote extends Component {
-    state = { quote_json: {}};
-    quote = "";
+    quote = "Hola, no pares de hacer cosas";
+    author = "Anonymus";
 
-    fetchJoke = () => {
-        // fetch('https://official-joke-api.appspot.com/random_joke')
-        fetch('https://quotes.rest/qod')
-            .then(response => response.json())
-            // .then(response => console.log(response))
-            .then(json => this.setState({ quote_json: json }))
-            .catch(error => alert(error.message));
+    
+    getQuote = () => {
+        const key = Math.floor(Math.random() * QUOTES.length);
+        console.log(key);
+        this.quote = QUOTES[key].text;
+        this.author = QUOTES[key].author;
     }
 
     componentDidMount() {
-        this.fetchJoke();
+        this.getQuote();
     }
 
     render() {
-        if( this.state.quote_json.contents){
-            this.quote =  this.state.quote_json.contents.quotes.quote;
-        }
-        if (!this.quote) {
-            this.quote =  "Hola, no pares de hacer cosas";
-        }
+        this.getQuote();
         return(
             <div>
-                <span style={{fontSize:"30px"}}><em>&#8220;</em></span>
-                <span><em>{this.quote}</em></span>
-                <span style={{fontSize:"30px"}}><em>&#8221;</em></span>
+                <p><em>&#8220;{this.quote}&#8221;</em></p>
+                <p><strong>{this.author}</strong></p>
             </div>
         )
     }

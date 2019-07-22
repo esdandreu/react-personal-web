@@ -14,22 +14,23 @@ class Footer extends Component {
   render() {
     return (
       <div className= "footer">
+        <p>&#x24B8; Andreu Giménez Bolinches <script>document.write(new Date().getFullYear())</script> </p>
         <div className= "footer-container">
           <div className= "footer_quote-container">
             <Quote/>
           </div>
           <div className= "footer_social-container">
             <a href="mailto:angibo2@etsid.upv.es" rel="noopener noreferrer" target="_blank">
-                <img className="logo" src={email_logo} alt="email"/>
+                <img className="footer_logo" src={email_logo} alt="email"/>
             </a>
             <a href="https://www.linkedin.com/in/andreu-gimenez-bolinches-esdandreu/" rel="noopener noreferrer" target="_blank">
-                <img className="logo" src={linkedin_logo} alt="linkedin"/>
+                <img className="footer_logo" src={linkedin_logo} alt="linkedin"/>
             </a>
             <a href="https://github.com/esdandreu" rel="noopener noreferrer" target="_blank">
-                <img className="logo" src={github_logo} alt="github"/>
+                <img className="footer_logo" src={github_logo} alt="github"/>
             </a>
             <a href="cv.esdandreu.es" rel="noopener noreferrer" target="_blank">
-                <img className="logo" src={curriculum_logo} alt="CV"/>
+                <img className="footer_logo" src={curriculum_logo} alt="CV"/>
             </a>
           </div>
         </div>

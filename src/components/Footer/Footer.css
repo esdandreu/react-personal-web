@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.footer p{
+    padding-top:20px;
+}
+
 .footer-container{
     width: 100%;
     display: table;
@@ -15,16 +19,24 @@
     width: 50%;
     display: table-cell;
     vertical-align: middle;
-    padding:20px;
+    padding:2vw;
 }
-.logo {
-    width: 40px;
+.footer_logo {
+    width: 8vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+    max-width: 40px;
 }
+
 @media only screen and (min-width: 745px) {
     /* Desktop Version */
     .footer-container{
         width: 60%;
         margin-left: 20%;
+    }
+    .footer_social-container, .footer_quote-container {
+        padding:20px;
     }
 }
 
