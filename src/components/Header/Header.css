@@ -19,6 +19,7 @@
 
 .header__navbar, .header__bio {
     background-color: #ffffffd2;
+    z-index: 1;
 }
 
 .header__navbar {

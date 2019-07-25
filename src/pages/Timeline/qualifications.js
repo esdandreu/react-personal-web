@@ -14,6 +14,7 @@ const qualifications = {
     ),
     y2015: () => (
         <div>
+            <p>• Grade of 13.32 out of 14 in the national university access exam</p>
         </div>
     ),
     y2016: () => (
@@ -55,11 +56,11 @@ const qualifications = {
             <p>• Involved in the&nbsp;
                 <a href="http://www.auvsi-suas.org/" rel="noopener noreferrer" target="_blank">
                 AUVSI SUAS
-                </a> competition with the robotics student association of Embry-Riddle Aeronautical University (2018)
+                </a> competition with the robotics student association of Embry-Riddle Aeronautical University
             </p>
             <p>
                 <a href="https://www.upv.es/rtv/tv/actualidad-en-la-upv/59131" rel="noopener noreferrer" target="_blank">
-                • National finalist in the James Dyson Award international competition with the team EOGU (2018)
+                • National finalist in the James Dyson Award international competition with the team EOGU
                 </a>
             </p>
             <p>
@@ -79,8 +80,8 @@ const qualifications = {
     ),
     y2018_no_link: () => (
         <div>
-            <p>• Involved in the AUVSI SUAS competition with the robotics student association of Embry-Riddle Aeronautical University (2018)</p>
-            <p>• National finalist in the James Dyson Award international competition with the team EOGU (2018)</p>
+            <p>• Involved in the AUVSI SUAS competition with the robotics student association of Embry-Riddle Aeronautical University</p>
+            <p>• National finalist in the James Dyson Award international competition with the team EOGU</p>
             <p>• National Winner of the Climate Launchpad 2018 competition with the team EOGU</p>
             <p>• Winner of the most popular project in the “Hackathon Castellón 2018”, with a Facial Recognition app</p>
             <p>• One of the 10% accepted applicants for the Junction hackathon 2018 in Helsinki</p>

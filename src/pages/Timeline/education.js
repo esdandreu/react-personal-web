@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 const education = {
     highschool: () => (
@@ -24,6 +25,22 @@ const education = {
             <h4>Exchange Student</h4>
             <p>Embry-Riddle Aeronautical University</p>
             <p>USA</p>
+        </div>
+    ),
+    Stadler_no_link: () => (
+        <div>
+            <h3>Software Engineer</h3>
+            <h4>Autum 2018</h4>
+            <h4>STADLER</h4>
+        </div>
+    ),
+    Stadler: () => (
+        <div>
+            <NavLink smooth to='/experience#experience'>
+                <h3>Software Engineer</h3>
+                <h4>Autum 2018</h4>
+                <h4>STADLER</h4>
+            </NavLink>
         </div>
     ),
     amsterdam: () => (
