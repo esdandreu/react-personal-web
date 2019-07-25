@@ -29,7 +29,7 @@ class Footer extends Component {
             <a href="https://github.com/esdandreu" rel="noopener noreferrer" target="_blank">
                 <img className="footer_logo" src={github_logo} alt="github"/>
             </a>
-            <a href="cv.esdandreu.es" rel="noopener noreferrer" target="_blank">
+            <a href="http://cv.esdandreu.es" rel="noopener noreferrer" target="_blank">
                 <img className="footer_logo" src={curriculum_logo} alt="CV"/>
             </a>
           </div>

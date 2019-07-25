@@ -8,7 +8,6 @@ class Quote extends Component {
     
     getQuote = () => {
         const key = Math.floor(Math.random() * QUOTES.length);
-        console.log(key);
         this.quote = QUOTES[key].text;
         this.author = QUOTES[key].author;
     }

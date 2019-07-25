@@ -1,42 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 .timeline-container {
-    margin: 5%;
-    width: 90%;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    width: 95%;
+    overflow: hidden;
+}
+
+h3, h4, h5, p {
+    padding-left: 2.5%;
+    text-align: center;
 }
 
 .grid-container {
     display: grid;
     align-content: stretch;
-    grid-template-columns: 25fr 20fr 5fr 45fr;
-    grid-gap: 0px 5px;
+    grid-gap: 0 2px;
 }
 
-.timeline_education-highschool, .timeline_education-valencia, .timeline_education-exchange {
+#education-grid {
+    margin-right: -30%;
+    grid-template-columns: 2fr 2fr 40px 3fr;
+}
+
+#qualifications-grid {
+    margin-left: -30%;
+    grid-template-columns: 1f 1fr 40px 10fr;
+}
+
+.timeline_education-highschool, .timeline_education-valencia, .timeline_education-exchangeUSA, .timeline_education-exchangeAMS {
     margin: 1%;
-    background-color: rgba(102, 102, 102, 0.26);
+    border: 2px solid #40275979;
 }
 .timeline_education-highschool {
     grid-column: 1 / 2;
-    grid-row: span 4;
+    grid-row: 2 / 6;
 }
 
 .timeline_education-valencia {
     grid-column: 1 / 2;
-    grid-row: span 8;
+    grid-row: 6 / 14;
 }
 
-.timeline_education-exchange {
+.timeline_education-exchangeUSA {
     grid-column: 2 / 3;
+    grid-row: 11 / 12;
     align-self: stretch;
 }
 
+.timeline_education-exchangeAMS {
+    grid-column: 2 / 3;
+    grid-row: 13 / 14;
+    align-self: stretch;
+} 
+#qualifications-education_items {
+    grid-column: 1 / 3;
+    opacity: 50%;
+}
+
+#qualifications-education_items h3, #qualifications-education_items h4, #qualifications-education_items p {
+    color: rgba(58, 58, 58, 0.555);
+}
 .timeline-year{
     grid-column: 3 / 4 ;
     grid-row: span 2;
     border-left: 2px solid black;
     text-align: center;
+    color: #592740;
 }
 
 .timeline_qualifications-container{
     grid-column: 4 / 5 ;
+    padding-right: 1%;
     grid-row: span 2;
+    /* background-color: blue; */
+}
+
+.timeline_qualifications-container p{
+    text-align: justify;
+    margin-top: 0;
+    /* background-color: red; */
+}
+@media only screen and (min-width: 500px) {
+    /* Desktop Version */
+    .timeline-container {
+        margin: 5%;
+        width: 90%;
+    }
+    #education-grid, #qualifications-grid {
+        margin-left: 0%;
+        margin-right: 0%;
+        grid-template-columns: 25fr 20fr 40px 45fr;
+        grid-gap: 0px 5px;
+    }
+}
+
+  
+@media only screen and (min-width: 1000px) {
+    /* Big screen */
+    .timeline-container {
+        margin: 5%;
+        width: 90%;
+    }
+    #education-grid, #qualifications-grid {
+        margin-left: 0%;
+        margin-right: 0%;
+        grid-template-columns: 25fr 20fr 40px 45fr;
+        grid-gap: 0px 5px;
+    }
 }

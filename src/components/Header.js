@@ -93,12 +93,12 @@ class Header extends Component  {
                         </NavLink>
                     </h3>
                     <h3 className = "header__link-timeline" id="header_link-education">
-                        <NavLink scroll={el => this.scrollWithOffset(el, this.navbar_height)} to='/timeline'>
+                        <NavLink scroll={el => this.scrollWithOffset(el, this.navbar_height)} to='/timeline#education'>
                             Education
                         </NavLink>
                     </h3>
                     <h3 className = "header__link-timeline" id="header_link-qualifications">
-                        <NavLink scroll={el => this.scrollWithOffset(el, this.navbar_height)} to='/timeline'>
+                        <NavLink scroll={el => this.scrollWithOffset(el, this.navbar_height)} to='/timeline#qualifications'>
                             Qualifications
                         </NavLink>
                     </h3>
