@@ -1,10 +1,10 @@
 import React from 'react';
 
 function PortfolioUnit(props) {
-    const {title, project_url, period, image, highlights, description} = props.project;
+    const {id, title, project_url, period, image, highlights, description} = props.project;
 
     return(
-        <div className="project">
+        <div className="project" id={id}>
             <div className="poject-image">
                 <img src={image} alt={title} />
             </div>
@@ -25,9 +25,9 @@ function PortfolioUnit(props) {
                     <h4>
                         {highlights}
                     </h4>
-                    <p>
-                        {description}
-                    </p>
+                    <div className="poject-description">
+                        {description()}
+                    </div>
                 </div>
             </div>
         </div>

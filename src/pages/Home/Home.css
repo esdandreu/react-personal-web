@@ -18,10 +18,37 @@
     display: inline;
     text-align: left;
     vertical-align: middle;
-    padding: 1.5vw;
 }
 .home_element-set h3 {
     text-align: center;
+}
+
+#objective {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-flow: dense;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.image-container {
+    text-align: center;
+    align-self: center;
+    grid-row: span 2;
+    grid-column: 1;
+}
+
+.skills_title-container {
+    grid-column: 1;
+}
+
+img {
+    width: auto;
+    max-height: 200px;
+    max-width: 100%;
 }
 
 @media only screen and (min-width: 500px) {
@@ -29,7 +56,29 @@
     .home_element-set {
         display: inline-block;
         padding: 0.5vw;
-    } 
+    }
+    #objective {
+        grid-template-columns: 85% 15%;
+    }
+    #skills {
+        grid-template-columns: 20% 80%;
+    }
+    
+    #objective .image-container {
+        grid-column: 2;
+    }
+
+    #skills .image-container {
+        grid-column: 1;
+    }
+    #skills .title-container {
+        grid-column: 2;
+    }
+    img {
+        width: auto;
+        max-height: 100%;
+        max-width: 90%;
+    }
 }
 
   

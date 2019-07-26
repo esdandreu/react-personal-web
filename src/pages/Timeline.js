@@ -9,14 +9,14 @@ import qualifications from './Timeline/qualifications';
 
 class Timeline extends Component {
   render() {
-    const is_education = "#education".localeCompare(this.props.location.hash)+1;
+    const is_education = (("#education".localeCompare(this.props.location.hash)+1)
+                          || ("#education-title".localeCompare(this.props.location.hash)+1));
     const enable_qualifications_hyperlinks = !(is_education && (window.innerWidth < 500));
     const enable_link_to_education = (!is_education && (window.innerWidth < 500));
-    console.log(enable_link_to_education)
     return(
         <div className="timeline-container">
-          <div id="education"><h1>Education</h1></div>
-          <div id="qualifications"><h1>Qualifications</h1></div>
+          <div id="education-title"><h1><NavLink to='/timeline#education'>Education</NavLink></h1></div>
+          <div id="qualifications-title"><h1><NavLink to='/timeline#qualifications'>Qualifications</NavLink></h1></div>
           <div className="grid-container" id={is_education ? "education-grid" : "qualifications-grid"}>
             <div className="timeline-year">2013</div>
             <div className="timeline_qualifications-container">

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 const qualifications = {
     y2013: () =>  (
@@ -92,9 +92,9 @@ const qualifications = {
     y2019: () => (
         <div>
             <p>
-                <a href="http://www.amsterdamuas.com/binaries/content/assets/subsites/aviation/international-students/design-build--fly-folder.pdf" rel="noopener noreferrer" target="_blank">
+                <NavLink smooth to='/experience#DBF'>
                 • Design, Build and Fly minor
-                </a>
+                </NavLink>
             </p>
         </div>
     ),

@@ -36,7 +36,7 @@ const education = {
     ),
     Stadler: () => (
         <div>
-            <NavLink smooth to='/experience#experience'>
+            <NavLink smooth to='/experience#experience-stadler' >
                 <h3>Software Engineer</h3>
                 <h4>Autum 2018</h4>
                 <h4>STADLER</h4>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-#education, #qualifications {
+#education-title, #qualifications-title {
     margin-top: 0;
     display: inline-block;
     width: 50%;
@@ -21,10 +21,14 @@ h3, h4, h5, p {
     text-align: center;
 }
 
+h1 {
+    font-size: 25px;
+}
+
 .grid-container {
     display: grid;
     justify-content: stretch;
-    grid-gap: 0 2px;
+    grid-gap: 0 2%;
 }
 
 #education-grid {
@@ -40,7 +44,7 @@ h3, h4, h5, p {
 }
 
 #qualifications-education_items, #education_items{
-    margin: 1%;
+    margin-top: 5%;
     background-color: white;
     z-index: 0;
 }

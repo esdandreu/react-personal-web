@@ -1,10 +1,10 @@
 import React from 'react';
 
 function ExperienceUnit(props) {
-    const {company, company_url, period, image, position, highlights, description} = props.experience;
+    const {id, company, company_url, period, image, position, highlights, description} = props.experience;
 
     return(
-        <div>
+        <div id={id}>
             <div className="experience-image">
                 <img src={image} alt={company} />
             </div>
@@ -27,10 +27,10 @@ function ExperienceUnit(props) {
                 <h4>
                     {highlights}
                 </h4>
-                <p>
-                    {description}
-                </p>
-            </div>
+                <div>
+                    {description()}
+                </div>
+        </div>
         </div>
     );
 }
