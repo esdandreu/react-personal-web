@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Experiences from './Experience/Experiences'
 import Portfolio from './Experience/Portfolio'

@@ -14,17 +14,20 @@ const PROJECTS = [
         highlights: "Matlab, Kinect, C, Robotics",
         description: () => (
             <div>
-                This is a project we developed in a UPV class, the hole project was developed with
-                Alberto Fernández Parra and Ivan Miralles Irles, I was the team chief and main programmer.
-                What it does is basically use a Color Based Tracking (with any color) to guide a robot
+                This is a project we developed in a UPV class in colaboration with two other classmates.
+                In this project we use a kinect camera to guide a robot
                 (a little car) towards a destination without any sensor integrated in the robot.
-                The kinect camera allows us to guide the robot in a straight line towards the destination
-                without placing the camera perpendicular to the ground due to it's depth sensor.
-                This is integrated with a GUI that allows you to select the colors to track from the
-                robot and from the destination.
+                A color cased tracking is used to distinguish between robot and destination in the camera.
+                Moreover, the kinect camera allows us to guide the robot in a straight line towards the destination
+                without placing the camera perpendicular to the ground due to its depth sensor.
+                The project consists then of a Kinect camera connected to a computer, this computer is
+                running a Matlab code that sends the moving instructions to the robot's microcontroller,
+                which drives the robot's motors acording to that instructions.
+                The Matlab code is integrated with a GUI that allows you to select the colors to track the
+                robot and the destination.
                 <br /><br />
                 The color tracking functions were developed from scratch using Matlab's computer vision
-                library, by that time the public color tracking methods just worked with pure
+                library. At that time the public color tracking methods just worked with pure
                 red, green and blue because they just decomposed the image RGB matrix. My code works
                 with any color and adapts constantly so it can deal with small light changes. A
                 <a href="https://upvedues-my.sharepoint.com/:v:/g/personal/angibo2_upv_edu_es/EduN7iEbUpZFhQ8ytkGTC4ABUTrqZ5FBZEJmz8WH_K2VBQ?e=3gzfDa" rel="noopener noreferrer" target="_blank">
@@ -46,20 +49,25 @@ const PROJECTS = [
         highlights: "Python, Telegram bot UI, Raspberry Pi, Linux",
         description: () => (
             <div>
-                Raspberry Pi alarm clock that you can connect to your calendar to wake you up before
-                your first day event with the spotify music you select, all the user interface is done
-                with a telegram bot. Must have spotify premium, also works as a music box and spotify
-                playing device, can reproduce youtube songs.
+                Raspberry Pi alarm clock that wakes you up in an irregular schedule without setting an alarm.
+                Integrated with your calendar, it triggers with
+                your first day event with the spotify music of your choice, witch is selected through the
+                user interface built in a telegram bot.
+                The user must have spotify premium and it also works as a music box
+                and a spotify connected speaker. Furthermore it can reproduce youtube videos as music.
                 <br /><br />
-                I made this because I was tired of usless alarm clocks with radio that did not adapt
-                completely to my needs. I have an irregular shedule so I can't set the same alarms every
-                week but I have a calendar with my events, I was also tired of checking every night the
-                tomorrow's alarm so I sincronize the alarm clock with the calendar and set the alarms
-                automatically. I like to wake up with music so I connected it to spotify and coded a
-                growing ring volume with time so you wake up more naturally, this volume curve and limits
+                I made this because I was tired of useless alarm clocks with radio that did not adapt
+                completely to my needs. I have an irregular schedule so I can't set the same alarms every day, neither
+                week, but I have a calendar with my events. Every night I checked the tomorrow's first event
+                to set my alarm so that's exactly what I automatized with this project.
+                The alarm clock is syncronized with the calendar and it sets the alarms
+                automatically. I like to wake up with music, but not any music, I like to chose what music
+                is better for me to wake up. Therefore I connected the alarm clock to spotify, where one can select
+                the playlist, song or album to use for waking up. Moreover, I coded a
+                growing ring volume with time so you wake up more naturally. Customization was the main motivation
+                to do this project so this volume curve and limits
                 are totally configurable by users without needing to know how to read the code, it's all in
-                the telegram bot UI. Why telegram as user interface? because I didn't want to code a complete
-                app, this should be simple so a simple chat is enough to set all things. The code and
+                the telegram bot UI. Why telegram as user interface? <em>Keep it stupid simple</em>. The code and
                 configuration instructions are
                 <a href="https://github.com/esdandreu/WakePi" rel="noopener noreferrer" target="_blank">
                     &nbsp;in my github account.
@@ -107,8 +115,8 @@ const PROJECTS = [
         highlights: "Javascript, HTML 5, CSS 3, React, Redux, Fractal",
         description: () => (
             <div>Portfolio web app developed with React Redux, using a Fractal file architecture, 
-                baseline from the create-react-App repository. The development of this web took two weeks long,
-                first week was dedicated to learn web development through two Udemy courses:
+                baseline from the create-react-App repository. The development of this web took two weeks.
+                The first week was dedicated to learning web development through two Udemy courses:
                 <ul>
                     <li>
                         <a href="https://www.udemy.com/realiza-tu-primer-pagina-web-hmtl5-css-responsive/" rel="noopener noreferrer" target="_blank">

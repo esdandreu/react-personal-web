@@ -8,58 +8,90 @@ import education from './Timeline/education';
 import qualifications from './Timeline/qualifications';
 
 class Timeline extends Component {
+  timeline_ini = 2013;
+  timeline_end = 2019;
+  
+
+  year2row = (year_ini,year_end) => {
+    const row_ini = 2 + 2*(year_ini-this.timeline_ini);
+    const row_end = 2 + 2*(year_end-this.timeline_ini);
+    return(row_ini + ' / ' + row_end);
+  }
+
   render() {
+    // Pass the value to css for last row for education
+    document.documentElement.style
+      .setProperty('--educationEnd', this.year2row(this.timeline_end+1,this.timeline_end+1.5));
     const is_education = (("#education".localeCompare(this.props.location.hash)+1)
                           || ("#education-title".localeCompare(this.props.location.hash)+1));
-    const enable_qualifications_hyperlinks = !(is_education && (window.innerWidth < 500));
-    const enable_link_to_education = (!is_education && (window.innerWidth < 500));
+    const is_desktop = (window.innerWidth > 500);
+    console.log(-(1 + 2*(this.timeline_end+1-this.timeline_ini)) + ' / span 1')
     return(
         <div className="timeline-container">
-          <div id="education-title"><h1><NavLink to='/timeline#education'>Education</NavLink></h1></div>
-          <div id="qualifications-title"><h1><NavLink to='/timeline#qualifications'>Qualifications</NavLink></h1></div>
           <div className="grid-container" id={is_education ? "education-grid" : "qualifications-grid"}>
+            <div id="education-title">
+              {is_desktop ? 
+              <h1><NavLink smooth to='/timeline#education'>Education</NavLink></h1> 
+              : <h1>Education</h1>
+              }
+            </div>
+            <div id="timeline_education-highschool" className="education_items" 
+              style={{gridRow: this.year2row(2013.5,2015.5)}}>
+              {education.highschool()}
+            </div>
+            <div id="timeline_education-valencia" className="education_items" 
+              style={{gridRow: this.year2row(2015.5,2019.5)}}>
+              {education.valencia()}
+            </div>
+            <div id="timeline_education-exchangeUSA" className="education_items" 
+              style={{gridRow: this.year2row(2018,2018.5)}}>
+              {education.USA()}
+            </div>
+            <div id="timeline_education-stadler" className="education_items" 
+              style={{gridRow: this.year2row(2018.5,2019)}}>
+              {education.Stadler()}
+            </div>
+            <div id="timeline_education-exchangeAMS" className="education_items" 
+              style={{gridRow: this.year2row(2019,2019.5)}}>
+              {education.amsterdam()}
+            </div>
+            <div id="qualifications-title" 
+                // {is_desktop ?
+                //  {gridRow: '1 / 2'} 
+                //  : {gridRow: this.year2row(this.timeline_end+1,this.timeline_end+1.5)}}
+                >
+              {is_desktop ? 
+              <h1><NavLink smooth to='/timeline#qualifications'>Qualifications</NavLink></h1> 
+              : <h1>Qualifications</h1>
+              }
+            </div>
             <div className="timeline-year">2013</div>
             <div className="timeline_qualifications-container">
-              {enable_qualifications_hyperlinks ? qualifications.y2013() : <NavLink to='/timeline#qualifications'>{qualifications.y2013()}</NavLink>}
-            </div>
-            <div className="timeline_education-highschool" id={enable_link_to_education ? "qualifications-education_items" : "education_items"}>
-              {enable_link_to_education ? <NavLink to='/timeline#education'>{education.highschool()}</NavLink> : education.highschool()}
+              {qualifications.y2013() }
             </div>
             <div className="timeline-year">2014</div>
             <div className="timeline_qualifications-container">
-              {enable_qualifications_hyperlinks ? qualifications.y2014() : <NavLink to='/timeline#qualifications'>{qualifications.y2014()}</NavLink>}
+              {qualifications.y2014()}
             </div>
             <div className="timeline-year">2015</div>
             <div className="timeline_qualifications-container">
-              {enable_qualifications_hyperlinks ? qualifications.y2015() : <NavLink to='/timeline#qualifications'>{qualifications.y2015()}</NavLink>}
-            </div>
-            <div className="timeline_education-valencia" id={enable_link_to_education ? "qualifications-education_items" : "education_items"}>
-              {enable_link_to_education ? <NavLink to='/timeline#education'>{education.valencia()}</NavLink> : education.valencia()}
+              {qualifications.y2015()}
             </div>
             <div className="timeline-year">2016</div>
             <div className="timeline_qualifications-container">
-              {enable_qualifications_hyperlinks ? qualifications.y2016() : <NavLink to='/timeline#qualifications'>{qualifications.y2016_no_link()}</NavLink>}
+              {qualifications.y2016()}
             </div>
             <div className="timeline-year">2017</div>
             <div className="timeline_qualifications-container">
-              {enable_qualifications_hyperlinks ? qualifications.y2017() : <NavLink to='/timeline#qualifications'>{qualifications.y2017_no_link()}</NavLink>}
-            </div>
-            <div className="timeline_education-exchangeUSA" id={enable_link_to_education ? "qualifications-education_items" : "education_items"}>
-              {enable_link_to_education ? <NavLink to='/timeline#education'>{education.USA()}</NavLink> : education.USA()}
-            </div>
-            <div className="timeline_education-stadler" id={enable_link_to_education ? "qualifications-education_items" : "education_items"}>
-              {enable_link_to_education ? <NavLink to='/timeline#education'>{education.Stadler_no_link()}</NavLink> : education.Stadler()}
+              {qualifications.y2017()}
             </div>
             <div className="timeline-year">2018</div>
             <div className="timeline_qualifications-container">
-              {enable_qualifications_hyperlinks ? qualifications.y2018() : <NavLink to='/timeline#qualifications'>{qualifications.y2018_no_link()}</NavLink>}
-            </div>
-            <div className="timeline_education-exchangeAMS" id={enable_link_to_education ? "qualifications-education_items" : "education_items"}>
-              {enable_link_to_education ? <NavLink to='/timeline#education'>{education.amsterdam()}</NavLink> : education.amsterdam()}
+              {qualifications.y2018()}
             </div>
             <div className="timeline-year">2019</div>
             <div className="timeline_qualifications-container">
-              {enable_qualifications_hyperlinks ? qualifications.y2019() : <NavLink to='/timeline#qualifications'>{qualifications.y2019_no_link()}</NavLink>}
+              {qualifications.y2019()}
             </div>
           </div>
         </div>

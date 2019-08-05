@@ -2,11 +2,11 @@ import React from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 const homeData = {
-    objective: "Join a company in the I+D Aerospace sector with projects like the implementation of “AI” and “Computer Vision” to build autonomous drones. And to save the world, obviously.",
-    strengths: "Self-learning skills and limited time problems resolution due to my experience in several hackathons and competitions; High English level because of my continuous studies in the “ARA” (High Academic Performance) group of Aerospace Engineering that is taught in English and my exchange experiences; Team management and social skills because of my sportive formation as a handball player and my participation in the Makers UPV association; Quick adaptation to any programming language or software tool due to my electronics, code developer and 3D design hobbies.",
+    objective: "Join a company in the R&D Aerospace sector with projects like the implementation of “AI” and “Computer Vision” to build autonomous drones. And to save the world, obviously.",
+    strengths: "Self-learning skills and limited time problem solving due to my experience in several hackathons and competitions; Fluent technical english level because of my continuous studies in the “ARA” (High Academic Performance) group of Aerospace Engineering that is taught in English and my exchange experiences in the USA and Netherlands; Team management and social skills because of my sportive formation as a handball player and my participation in the Makers UPV association; Quick adaptation to any programming language or software tool due to my electronics, code developer and 3D design hobbies.",
     skills: () => (
-        <div className="home_element-container">
-            <div className="home_element-set">
+        <div id="skills-data" className="home_element-container">
+            <div id="skill-two-row-span" className="home_element-set">
                 <h3>Programming</h3>
                 <ul>
                     <li>C (raw and 
@@ -103,7 +103,7 @@ const homeData = {
                 <ul>
                     <li>Spanish (Native)</li>
                     <li>Catalonian (Native) C1 certificate</li>
-                    <li>English (Working Knowledge)
+                    <li>English (Fluent)
                         <a href="https://upvedues-my.sharepoint.com/:b:/g/personal/angibo2_upv_edu_es/EfpKlOKvzn1GlsNVsejwsHMB-4n1z00U9Z1Rra9upJHNBg?e=f1LV5Z" rel="noopener noreferrer" target="_blank">
                             &nbsp;TOEFL 99 IBT,&nbsp;
                         </a>

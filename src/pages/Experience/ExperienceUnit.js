@@ -18,10 +18,10 @@ function ExperienceUnit(props) {
                     <span>
                         {period}
                     </span>
-                    <h3>
-                        {position}
-                    </h3>
                 </div>
+                <h3>
+                    {position}
+                </h3>
             </div>
             <div className="experience-content">
                 <h4>
