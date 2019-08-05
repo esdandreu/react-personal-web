@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import './HeaderBio.css';
 import { withRouter } from 'react-router-dom';
+import Img from 'react-image';
 
-import pic_1 from '../../images/profile-pic.jpg';
-import pic_2 from '../../images/profile-bike.jpg';
-import pic_3 from '../../images/profile-graduate.jpg';
+import pic_1 from '../../images/profile-graduate.jpg';
+import pic_2 from '../../images/profile-pic.jpg';
+import pic_3 from '../../images/profile-bike.jpg';
 import pic_4 from '../../images/profile-NY.jpg';
 import pic_5 from '../../images/profile-radio.jpg';
 
@@ -13,7 +14,7 @@ import linkedin_logo from '../../images/linkedin.png';
 import github_logo from '../../images/github.png';
 import curriculum_logo from '../../images/curriculum.png';
 
-const IMGS = [
+const IMGS= [
     pic_1,
     pic_2,
     pic_3,
@@ -21,10 +22,17 @@ const IMGS = [
     pic_5,
   ];
 
+
+
+
 class HeaderBio extends Component {
-    state = { imgIndex: 0, fadeIn: true };
-    fade_duration = 700;
-    image_duration = 6*1000;
+    constructor(props) {
+        super(props);
+        this.state = { imgIndex: 0, fadeIn: true };
+        this.fade_duration = 1000;
+        this.image_duration = 6*1000;
+    }
+    
 
     componentDidMount() {
         this.timeout = setTimeout(() => this.setState({ fadeIn: false }), this.image_duration-this.fade_duration);
@@ -32,25 +40,32 @@ class HeaderBio extends Component {
     }
 
     componentWillUnmount() {
-        clearInterval(this.titleInterval);
+        clearInterval(this.imgInterval);
         clearTimeout(this.timeout);
     }
 
     animateImages = () => {
-        this.titleInterval = setInterval(() => {
+        this.imgInterval = setInterval(() => {
             const imgIndex = (this.state.imgIndex + 1) % IMGS.length;
-            this.setState({ imgIndex, fadeIn: true });
-            this.timeout = setTimeout(() => this.setState({ fadeIn: false }), this.image_duration-this.fade_duration);
+            this.setState({ imgIndex, fadeIn: true }, () => 
+                {this.timeout = setTimeout(() => this.setState({ fadeIn: false }), this.image_duration-this.fade_duration);}
+            );
         }, this.image_duration);
     }
 
     render(){
         const { fadeIn, imgIndex } = this.state;
-        const profile_pic = IMGS[imgIndex];
         return(
             <div className="bio_container" id="header_bio">
-                <div className="bio_pic">
-                    <img className={fadeIn ? 'img-fade-in' : 'img-fade-out'} src={profile_pic} alt="profile"/>
+                <div className="bio_pic" id={fadeIn ? 'img-fade-in' : 'img-fade-out'}>
+                    <Img
+                        style={imgIndex % 2 ? {display:"none"} : {}}
+                        src={[IMGS[2*Math.ceil(imgIndex/2)],pic_1]}
+                        alt="profile"/>
+                    <Img
+                        style={imgIndex % 2 ? {} : {display:"none"} }
+                        src={[IMGS[2*Math.floor(imgIndex/2)+1],pic_1]}
+                        alt="profile"/>
                 </div>
                 <div className="bio_info-container">
                     <div className="bio_info">

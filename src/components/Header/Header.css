@@ -63,28 +63,6 @@
     display: none;
 }
 
-.img-fade-out {
-    opacity: 0;
-    animation-name: fade-out;
-    animation-duration: 0.5s;
-}
-
-.img-fade-in {
-    opacity: 100;
-    animation-name: fade-in;
-    animation-duration: 0.5s;
-}
-
-@keyframes fade-out {
-    from {opacity: 100}
-    to {opacity: 0}
-}
-
-@keyframes fade-in {
-    from {opacity: 0}
-    to {opacity: 100}
-}
-
 @media only screen and (min-width: 745px) {
     /* Desktop Version */
     

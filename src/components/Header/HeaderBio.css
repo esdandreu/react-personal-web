@@ -9,6 +9,7 @@
 .bio_pic {
     width: 100%;
     float: center;
+    /* background-color: red */
 }
 
 .bio_pic img {
@@ -18,6 +19,28 @@
     text-align: center;
     margin-top: 20px;
     float: center;
+}
+
+#img-fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+    animation-duration: 0.5s;
+}
+
+#img-fade-in {
+    opacity: 100;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade-out {
+    from {opacity: 100}
+    to {opacity: 0}
+}
+
+@keyframes fade-in {
+    from {opacity: 0}
+    to {opacity: 100}
 }
 
 .bio_info-container {
@@ -75,12 +98,8 @@
     }
 
     .bio_pic img {
-        border-radius: 50%;
         height: 90%;
         width: auto;
-        margin-top: 20px;
-        display: center;
-        bottom: 0px;
     }
     
     .bio_info-container {

@@ -27,18 +27,11 @@ const education = {
             <p>USA</p>
         </div>
     ),
-    Stadler_no_link: () => (
-        <div>
-            <h3>Software Engineer</h3>
-            <h4>Autum 2018</h4>
-            <h4>STADLER</h4>
-        </div>
-    ),
     Stadler: () => (
         <div>
             <NavLink smooth to='/experience#experience-stadler' >
                 <h3>Software Engineer</h3>
-                <h4>Autum 2018</h4>
+                <h4>Autumn 2018</h4>
                 <h4>STADLER</h4>
             </NavLink>
         </div>

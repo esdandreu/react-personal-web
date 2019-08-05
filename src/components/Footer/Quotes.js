@@ -21,7 +21,7 @@ const QUOTES = [
     },
     {
         text: 'I love to do what I do. So, I do work long hours.',
-        author: 'Bandon Sanderson',
+        author: 'Brandon Sanderson',
     },
 ]
 
