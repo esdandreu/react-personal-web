@@ -5,27 +5,29 @@ function PortfolioUnit(props) {
 
     return(
         <div className="project" id={id}>
-            <div className="poject-image">
+            <div className="project_container">
+                <div id="project-title" className="project-title_container">
+                    <h2>
+                        <a href={project_url} rel="noopener noreferrer" target="_blank">
+                            {title}
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div className="project-image">
                 <img src={image} alt={title} />
             </div>
-            <div className="poject_container">
-                <div>
-                    <div className="poject-title">
-                        <h2>
-                            <a href={project_url} rel="noopener noreferrer" target="_blank">
-                                {title}
-                            </a>
-                        </h2>
-                        <span>
-                            {period}
-                        </span>
-                    </div>
+            <div className="project_container">
+                <div className="project-title_container">
+                    <span>
+                        {period}
+                    </span>
                 </div>
-                <div className="poject-content">
+                <div className="project-content">
                     <h4>
                         {highlights}
                     </h4>
-                    <div className="poject-description">
+                    <div className="project-description">
                         {description()}
                     </div>
                 </div>

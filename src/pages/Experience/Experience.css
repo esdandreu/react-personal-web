@@ -58,28 +58,31 @@ h4 {
     display: grid;
     grid-template-columns: 100%
 }
-.poject-image {
+.project-image {
+    /* margin-top: 5vh; */
+    grid-column: 1 / 2;
     align-self: center;
     text-align: center;
 }
-.poject-image img {
+.project-image img {
     width: auto;
     max-height: 400px;
     max-width: 100%; 
     box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
-.poject_container {
+.project_container {
+    grid-column: 1 / 2;
     width: 100%;
     text-align: center;
 }
-.poject-title {
+.project-title_container {
     display: inline-block;
     text-align: left;
 }
-.poject-content {
+.project-content {
     display: block;
 }
-.poject-description {
+.project-description {
     text-align: justify;
 }
 @media only screen and (min-width: 745px) {
@@ -103,7 +106,8 @@ h4 {
     .project {
         grid-template-columns: 40% 60%;
     }
-    .poject_container {
+    .project_container {
+        grid-column: 2 / 3;
         margin-left: 5%;
     }
 }
