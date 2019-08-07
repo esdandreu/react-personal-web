@@ -14,13 +14,13 @@ const PROJECTS = [
         highlights: "Matlab, Kinect, C, Robotics",
         description: () => (
             <div>
-                This is a project we developed in a UPV class in colaboration with two other classmates.
+                This is a project we developed in a UPV class in collaboration with two other classmates.
                 In this project we use a kinect camera to guide a robot
                 (a little car) towards a destination without any sensor integrated in the robot.
                 A color cased tracking is used to distinguish between robot and destination in the camera.
                 Moreover, the kinect camera allows us to guide the robot in a straight line towards the destination
                 without placing the camera perpendicular to the ground due to its depth sensor.
-                The project consists then of a Kinect camera connected to a computer, this computer is
+                The project consists then of a Kinect camera connected to a computer. This computer is
                 running a Matlab code that sends the moving instructions to the robot's microcontroller,
                 which drives the robot's motors acording to that instructions.
                 The Matlab code is integrated with a GUI that allows you to select the colors to track the
@@ -31,7 +31,7 @@ const PROJECTS = [
                 red, green and blue because they just decomposed the image RGB matrix. My code works
                 with any color and adapts constantly so it can deal with small light changes. A
                 <a href="https://upvedues-my.sharepoint.com/:v:/g/personal/angibo2_upv_edu_es/EduN7iEbUpZFhQ8ytkGTC4ABUTrqZ5FBZEJmz8WH_K2VBQ?e=3gzfDa" rel="noopener noreferrer" target="_blank">
-                    &nbsp;demostration video&nbsp;
+                    &nbsp;demonstration video&nbsp;
                 </a>
                 was recorded at the end of the course, and the source code can be found
                 <a href="https://es.mathworks.com/matlabcentral/fileexchange/66843-kinect-color-guided-robot-upv?s_tid=prof_contriblnk" rel="noopener noreferrer" target="_blank">
@@ -51,7 +51,7 @@ const PROJECTS = [
             <div>
                 Raspberry Pi alarm clock that wakes you up in an irregular schedule without setting an alarm.
                 Integrated with your calendar, it triggers with
-                your first day event with the spotify music of your choice, witch is selected through the
+                your first day event with the spotify music of your choice, selected through the
                 user interface built in a telegram bot.
                 The user must have spotify premium and it also works as a music box
                 and a spotify connected speaker. Furthermore it can reproduce youtube videos as music.
@@ -61,12 +61,12 @@ const PROJECTS = [
                 week, but I have a calendar with my events. Every night I checked the tomorrow's first event
                 to set my alarm so that's exactly what I automatized with this project.
                 The alarm clock is syncronized with the calendar and it sets the alarms
-                automatically. I like to wake up with music, but not any music, I like to chose what music
+                automatically. I like to wake up with music, but not any music. I like to chose what music
                 is better for me to wake up. Therefore I connected the alarm clock to spotify, where one can select
                 the playlist, song or album to use for waking up. Moreover, I coded a
                 growing ring volume with time so you wake up more naturally. Customization was the main motivation
                 to do this project so this volume curve and limits
-                are totally configurable by users without needing to know how to read the code, it's all in
+                are totally configurable by users without needing to know how to read the code as it's all in
                 the telegram bot UI. Why telegram as user interface? <em>Keep it stupid simple</em>. The code and
                 configuration instructions are
                 <a href="https://github.com/esdandreu/WakePi" rel="noopener noreferrer" target="_blank">
