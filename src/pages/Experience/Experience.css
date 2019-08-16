@@ -5,17 +5,26 @@
 
 /* Whole page */
 .experience-container {
-    padding: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 10vh;
     font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none currentColor solid;
 }
 h1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 5vh;
     color: #3a3f43;
     text-align: center;
 }
 h2, a:visited, a:link{
+    padding: 0;
+    margin: 0;
+    margin-top: 5vh;
+    margin-bottom: 10px;
     color:#0C4876;
 }
 a:hover{
@@ -27,6 +36,9 @@ h3 {
 h4 {
     color: #005655;
     font-family: 'Rubik', sans-serif;
+}
+hr {
+    margin: 0;
 }
 /* Experience */
 .experience-image {
@@ -87,9 +99,6 @@ h4 {
 }
 @media only screen and (min-width: 745px) {
     /* Desktop Version */
-    h2 {
-        margin-top: 30%;
-    }
     .experience-image {
         display: inline-block;
         width: 30%;

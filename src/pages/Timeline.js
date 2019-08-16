@@ -25,7 +25,6 @@ class Timeline extends Component {
     const is_education = (("#education".localeCompare(this.props.location.hash)+1)
                           || ("#education-title".localeCompare(this.props.location.hash)+1));
     const is_desktop = (window.innerWidth > 500);
-    console.log(-(1 + 2*(this.timeline_end+1-this.timeline_ini)) + ' / span 1')
     return(
         <div className="timeline-container">
           <div className="grid-container" id={is_education ? "education-grid" : "qualifications-grid"}>

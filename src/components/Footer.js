@@ -14,7 +14,7 @@ class Footer extends Component {
   render() {
     return (
       <div className= "footer">
-        <p>&#x24B8; Andreu Giménez Bolinches <script>document.write(new Date().getFullYear())</script> </p>
+        <p>&#x24B8; {new Date().getFullYear()} Andreu Giménez Bolinches  </p>
         <div className= "footer-container">
           <div className= "footer_quote-container">
             <Quote/>
