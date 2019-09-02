@@ -46,12 +46,12 @@ const qualifications = {
                 </a> competition with the robotics student association of Embry-Riddle Aeronautical University
             </p>
             <p>
-                <a href="https://www.upv.es/rtv/tv/actualidad-en-la-upv/59131" rel="noopener noreferrer" target="_blank">
+                <a href="https://www.jamesdysonaward.org/2018/project/eogu/" rel="noopener noreferrer" target="_blank">
                 • National finalist in the James Dyson Award international competition with the team EOGU
                 </a>
             </p>
             <p>
-                <a href="https://www.upv.es/rtv/tv/actualidad-en-la-upv/59131" rel="noopener noreferrer" target="_blank">
+                <a href="http://www.upv.es/noticias-upv/noticia-10449-climatelaunchp-es.html" rel="noopener noreferrer" target="_blank">
                 • National Winner of the Climate Launchpad 2018 competition with the team EOGU
                 </a>
             </p>

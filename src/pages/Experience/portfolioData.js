@@ -9,7 +9,7 @@ const PROJECTS = [
         id: 'KinectRobot',
         title: "Kinect Color Guided Robot",
         project_url: "https://es.mathworks.com/matlabcentral/fileexchange/66843-kinect-color-guided-robot-upv?s_tid=prof_contriblnk",
-        period: "Autum 2017",
+        period: "Autumn 2017",
         image: KinectRobot_img,
         highlights: "Matlab, Kinect, C, Robotics",
         description: () => (
@@ -109,7 +109,7 @@ const PROJECTS = [
     {
         id: 'project-web',
         title: "React Redux portfolio web",
-        project_url: "",
+        project_url: "https://www.esdandreu.es",
         period: "July 2019",
         image: web_img,
         highlights: "Javascript, HTML 5, CSS 3, React, Redux, Fractal",
