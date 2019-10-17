@@ -109,7 +109,7 @@ const PROJECTS = [
     {
         id: 'project-web',
         title: "React Redux portfolio web",
-        project_url: "https://www.esdandreu.es",
+        project_url: "https://www.esdandreu.com",
         period: "July 2019",
         image: web_img,
         highlights: "Javascript, HTML 5, CSS 3, React, Redux, Fractal",
