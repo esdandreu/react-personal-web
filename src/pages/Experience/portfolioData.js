@@ -2,6 +2,7 @@ import React from 'react';
 import web_img from './images/project-web.png';
 import WakePi_img from './images/WakePi.jpg';
 import KinectRobot_img from './images/KinectRobot.jpg';
+import eogu_img from './images/Eogu.jpg';
 import DBF_img from './images/DBF.jpg';
 
 const PROJECTS = [
@@ -22,7 +23,7 @@ const PROJECTS = [
                 without placing the camera perpendicular to the ground due to its depth sensor.
                 The project consists then of a Kinect camera connected to a computer. This computer is
                 running a Matlab code that sends the moving instructions to the robot's microcontroller,
-                which drives the robot's motors acording to that instructions.
+                which drives the robot's motors according to that instructions.
                 The Matlab code is integrated with a GUI that allows you to select the colors to track the
                 robot and the destination.
                 <br /><br />
@@ -54,15 +55,15 @@ const PROJECTS = [
                 your first day event with the spotify music of your choice, selected through the
                 user interface built in a telegram bot.
                 The user must have spotify premium and it also works as a music box
-                and a spotify connected speaker. Furthermore it can reproduce youtube videos as music.
+                and a spotify connected speaker. Furthermore, it can reproduce youtube videos as music.
                 <br /><br />
                 I made this because I was tired of useless alarm clocks with radio that did not adapt
                 completely to my needs. I have an irregular schedule so I can't set the same alarms every day, neither
                 week, but I have a calendar with my events. Every night I checked the tomorrow's first event
                 to set my alarm so that's exactly what I automatized with this project.
-                The alarm clock is syncronized with the calendar and it sets the alarms
-                automatically. I like to wake up with music, but not any music. I like to chose what music
-                is better for me to wake up. Therefore I connected the alarm clock to spotify, where one can select
+                The alarm clock is synchronized with the calendar and it sets the alarms
+                automatically. I like to wake up with music, but not any music. I like to choose what music
+                is better for me to wake up. Therefore, I connected the alarm clock to spotify, where one can select
                 the playlist, song or album to use for waking up. Moreover, I coded a
                 growing ring volume with time so you wake up more naturally. Customization was the main motivation
                 to do this project so this volume curve and limits
@@ -76,6 +77,35 @@ const PROJECTS = [
         ),
     },
     {
+        id: 'EOGU',
+        title: "EOGU",
+        project_url: "https://www.jamesdysonaward.org/2018/project/eogu/",
+        period: "Autum 2018 - Present",
+        image: eogu_img,
+        highlights: "3D Printing, Fusion 360, Entrepreneurship, CFD",
+        description: () => (
+            <div>
+                Entrepreneurship project developed with the EOGU team. The project consisted in
+                developing a renewable energy generator for city buildings: The Eolic Panel.
+                <br /><br />
+                The project includes the technical aspects like the design, simulation and prototyping of the invention,
+                as well as the business model, market research, customer validation, financials estimations, etc.
+                Several design and business competitions have awarded this project, like the  
+                <a href="https://www.jamesdysonaward.org/2018/project/eogu/" rel="noopener noreferrer" target="_blank">
+                    &nbsp;James Dyson Award&nbsp;
+                </a>and the  
+                <a href="http://www.upv.es/noticias-upv/noticia-10449-climatelaunchp-es.html" rel="noopener noreferrer" target="_blank">
+                    &nbsp;Climate Launchpad
+                </a>.
+                The project entered the 
+                <a href="https://www.climate-kic.org/programmes/entrepreneurship/accelerator/" rel="noopener noreferrer" target="_blank">
+                    &nbsp;Climate-KIC Accelerator&nbsp;
+                </a> Stage 1 on May 2019, but didn't continued to the Stage 2 because the team members were not able to dedicate 
+                the required amount of time to the project in order to form a company.
+            </div>
+        ),
+    },
+    {
         id: 'DBF',
         title: "Design, Build and Fly",
         project_url: "http://www.amsterdamuas.com/binaries/content/assets/subsites/aviation/international-students/design-build--fly-folder.pdf",
@@ -85,7 +115,7 @@ const PROJECTS = [
         description: () => (
             <div>
                 Thesis project developed during my exchange experience in Amsterdam University of Applied
-                Sciences. The programme follwed was the Design Build and Fly minor.
+                Sciences. The programme followed was the Design Build and Fly minor.
                 <h4>Thesis Abstract</h4>
                 Five students with different backgrounds have completed the Design, Build and Fly minor 
                 in the Aviation Academy of the Amsterdam University of Applied Sciences. The main goal of 
@@ -109,7 +139,7 @@ const PROJECTS = [
     {
         id: 'project-web',
         title: "React Redux portfolio web",
-        project_url: "https://www.esdandreu.com",
+        project_url: "http://www.esdandreu.com",
         period: "July 2019",
         image: web_img,
         highlights: "Javascript, HTML 5, CSS 3, React, Redux, Fractal",
