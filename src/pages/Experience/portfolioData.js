@@ -90,7 +90,7 @@ const PROJECTS = [
                 <br /><br />
                 The project includes the technical aspects like the design, simulation and prototyping of the invention,
                 as well as the business model, market research, customer validation, financials estimations, etc.
-                Several design and business competitions have awarded this project, like the  
+                This project has received several design and business awards, like the  
                 <a href="https://www.jamesdysonaward.org/2018/project/eogu/" rel="noopener noreferrer" target="_blank">
                     &nbsp;James Dyson Award&nbsp;
                 </a>and the  
@@ -100,8 +100,8 @@ const PROJECTS = [
                 The project entered the 
                 <a href="https://www.climate-kic.org/programmes/entrepreneurship/accelerator/" rel="noopener noreferrer" target="_blank">
                     &nbsp;Climate-KIC Accelerator&nbsp;
-                </a> Stage 1 on May 2019, but didn't continued to the Stage 2 because the team members were not able to dedicate 
-                the required amount of time to the project in order to form a company.
+                </a> Stage 1 in May 2019, but it didn't continued to the Stage 2 because the team members were not able to dedicate 
+                the required amount of time to the project in order to form the company.
             </div>
         ),
     },
