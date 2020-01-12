@@ -54,6 +54,10 @@ class Timeline extends Component {
               style={{gridRow: this.year2row(2019,2019.5)}}>
               {education.amsterdam()}
             </div>
+            <div id="timeline_education-prontopro" className="education_items" 
+              style={{gridRow: this.year2row(2019.5,2020)}}>
+              {education.ProntoPro()}
+            </div>
             <div id="qualifications-title" 
                 // {is_desktop ?
                 //  {gridRow: '1 / 2'} 

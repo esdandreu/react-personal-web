@@ -72,6 +72,14 @@ const qualifications = {
                 • Design, Build and Fly minor
                 </NavLink>
             </p>
+            <p>• Winner of&nbsp;
+                <a href="https://2019.hackjunction.com/challenges/effective-radiation-therapy-plan-review" rel="noopener noreferrer" target="_blank">
+                Effective Radiation Therapy Plan Review
+                </a> challenge proposed by Varian in the Healthtech category at&nbsp;
+                <a href="http://www.upv.es/noticias-upv/noticia-11673-makers-upv-tri-es.html" rel="noopener noreferrer" target="_blank">
+                Junction hackathon 2019
+                </a> in Helsinki
+            </p>
         </div>
     ),
 };

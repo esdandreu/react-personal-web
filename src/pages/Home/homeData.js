@@ -113,7 +113,7 @@ const homeData = {
                         </NavLink>
                     </li>
                     <li>German (Basic competence)</li>
-                    <li>Italian (Basic competence)</li>
+                    <li>Italian (Limited working competence)</li>
                 </ul>
             </div>
         </div>

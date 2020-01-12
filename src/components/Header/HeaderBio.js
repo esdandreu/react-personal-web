@@ -79,7 +79,7 @@ class HeaderBio extends Component {
                         <a href="https://github.com/esdandreu" rel="noopener noreferrer" target="_blank">
                             <img className="logo" src={github_logo} alt="github"/>
                         </a>
-                        <a href="http://cv.esdandreu.es" rel="noopener noreferrer" target="_blank">
+                        <a href="https://1drv.ms/b/s!AqZvnCxLmXx9gexK_oR9Z1fuw7b8xg?e=dvXf8y" rel="noopener noreferrer" target="_blank">
                         <img className="logo" src={curriculum_logo} alt="CV"/>
                         </a>
                         <h3>Aerospace Engineer | Programmer | Maker</h3>

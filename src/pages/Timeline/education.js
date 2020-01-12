@@ -45,6 +45,15 @@ const education = {
             <p>Netherlands</p>
         </div>
     ),
+    ProntoPro: () => (
+        <div>
+            <NavLink smooth to='/experience#experience-prontopro' >
+                <h3>Junior Marketing Automation Engineer</h3>
+                <h4>November 2019 - May 2020</h4>
+                <h4>ProntoPro</h4>
+            </NavLink>
+        </div>
+    ),
 };
 
 export default education;

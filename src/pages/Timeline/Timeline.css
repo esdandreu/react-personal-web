@@ -79,6 +79,11 @@ h1 {
     justify-self: end;
 }
 
+#timeline_education-prontopro {
+    border: 2px solid #3333ff85;
+    justify-self: end;
+}
+
 #qualifications-title {
     grid-row: var(--educationEnd);
 }

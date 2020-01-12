@@ -1,5 +1,6 @@
 import React from 'react';
 import stadler_image from './images/Stadler.jpg';
+import prontopro_image from './images/prontopro.png';
 
 const EXPERIENCES = [
     {
@@ -22,6 +23,22 @@ const EXPERIENCES = [
                 the train wheels is expensive and therefore the required inspections for the predictive
                 maintenance are not economically viable. The software I worked on is connected to a hardware
                 installed in the train that allows the inspection of the wheels without disassembling them.
+            </p>
+        ),
+    },
+    {
+        id: "experience-prontopro",
+        company: "ProntoPro",
+        company_url: "https://www.prontopro.it/",
+        period: "Nov 2019 - May 2020",
+        image: prontopro_image,
+        position: "Junior Marketing Automation Engineer",
+        highlights: "Full stack web development",
+        description: () => (
+            <p>I'm part of the Linkbuilding team, in the SEO department. My role is to automate the daily team tasks,
+                in order to improve the overall team efficiency.
+                My first project involves full stack web development skills using Django (python) and React-Redux (javasctipt)
+                to automate some tasks outsourcing.
             </p>
         ),
     },
